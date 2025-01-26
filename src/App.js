@@ -4,20 +4,32 @@ import "./App.css";
 let name = "Stark3";
 function App() {
   return (
-    // <div className="blank">Lovely</div>
+    // <div classNameNameName="blank">Lovely</div>
     <>
-      <nav>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            TextUtils
+          </a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  About
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <div className="container">
-        <h1>Hello {name}</h1>
-        <h1>
-          Hello <i>{name}</i>
-        </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos soluta natus enim vel cupiditate? Vero, voluptas quam? Facilis corrupti in reprehenderit sit atque tempore tenetur nihil consectetur illum dignissimos a rem fugit ad, nisi explicabo. Dicta excepturi neque sequi nam vitae? Illum sit et temporibus quaerat illo dolorem. Maxime, hic.</p>
-      </div>
     </>
   );
 }
